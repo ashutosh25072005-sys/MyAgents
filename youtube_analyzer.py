@@ -3,6 +3,10 @@ from dotenv import load_dotenv
 from agno.agent import Agent
 from agno.models.groq import Groq
 from agno.tools.youtube import YouTubeTools
+import streamlit as st
+import os
+if "GROQ_API_KEY" in st.secrets:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 load_dotenv()
 
