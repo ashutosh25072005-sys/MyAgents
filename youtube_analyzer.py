@@ -54,12 +54,6 @@ def build_youtube_agent():
         """),
         add_datetime_to_context=True,
         markdown=True,
-
-tools=[YouTubeTools(get_video_timestamps=True)]
     )
-youtube_agent = build_youtube_agent()
 
-#youtube_agent.print_response(
- #    "Analyze this video: https://www.youtube.com/watch?v=JkaxUblCGz0",
-  #  stream=True,
- #)
+youtube_agent = build_youtube_agent()
