@@ -14,7 +14,7 @@ def build_youtube_agent():
     return Agent(
         name="YouTube Agent",
         model=Groq(id="llama-3.3-70b-versatile"),
-        tools=[YouTubeTools(get_video_timestamps=True)],
+        tools=[YouTubeTools()],
         instructions=dedent("""\
             You are an expert YouTube content analyst with a keen eye for detail! 🎓
             Follow these steps for comprehensive video analysis:
